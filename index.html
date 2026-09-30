@@ -4,27 +4,27 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
-
     <title>Portfolio</title>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
     <main class="page">
-
         <div class="scene" id="scene">
             <img
                 class="scene-background"
                 src="assets/backgrounds/background.png"
                 alt=""
             >
+            <div
+                class="petal-layer"
+                id="petalLayer"
+                aria-hidden="true"
+            ></div>
 
             <button
                 class="scene-object frog"
@@ -35,6 +35,12 @@
                     src="assets/frog/frog-idle.png"
                     alt=""
                 >
+                <span
+                    class="interaction-bubble frog-bubble"
+                    id="frogBubble"
+                >
+                    Minecraft Mods
+                </span>
             </button>
 
             <button
@@ -46,6 +52,12 @@
                     src="assets/character/character-reading.png"
                     alt=""
                 >
+                <span
+                    class="interaction-bubble character-bubble"
+                    id="characterBubble"
+                >
+                    Do you want to see my credentials?
+                </span>
             </button>
 
             <button
@@ -57,55 +69,45 @@
                     src="assets/sign/wooden-sign.png"
                     alt=""
                 >
-
-                <span class="sign-alert">!</span>
+                <span class="sign-alert" aria-hidden="true">!</span>
             </button>
-
-            <div
-                class="petal-layer"
-                id="petalLayer"
-                aria-hidden="true"
-            ></div>
-
-            <div
-                class="sparkle-layer"
-                id="sparkleLayer"
-                aria-hidden="true"
-            ></div>
-
         </div>
 
     </main>
-
+    
     <div
-        class="modal-overlay"
-        id="helpModal"
+        class="help-overlay"
+        id="helpOverlay"
         aria-hidden="true"
     >
-
-        <div class="help-window">
-
-            <button
-                class="modal-close"
-                id="closeHelp"
-                aria-label="Close"
-            >
-                ×
-            </button>
-
+        <div class="help-popup">
             <h1>Welcome!</h1>
 
             <p>
-                
+                This website is something akin to an interactive portfolio,
+                but I mainly use it as a comfort-inducing space for my
+                pet-projects or, as I like to call them, "frojects".
+                Please don't judge my sense of humor.
             </p>
 
-        </div>
+            <p>
+                Interacting with my avatar will redirect you to my
+                credentials page.
+            </p>
 
+            <p>
+                Interacting with a frog will redirect you to the project
+                page assigned to that particular frog.
+                Each frog has its own unique project.
+            </p>
+
+            <p class="help-close-hint">
+                Click outside this window to close it.
+            </p>
+        </div>
     </div>
 
-
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
