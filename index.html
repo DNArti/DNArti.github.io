@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <div class="scene" id="scene">
+            <img
+                class="scene-background"
+                src="assets/backgrounds/background.png"
+                alt=""
+            >
+
+            <button
+                class="scene-object frog"
+                id="frog"
+                aria-label="Open project"
+            >
+                <img
+                    src="assets/frog/frog-idle.png"
+                    alt=""
+                >
+            </button>
+
+            <button
+                class="scene-object character"
+                id="character"
+                aria-label="Open resume"
+            >
+                <img
+                    src="assets/character/character-reading.png"
+                    alt=""
+                >
+            </button>
+
+            <button
+                class="scene-object sign"
+                id="helpSign"
+                aria-label="How this website works"
+            >
+                <img
+                    src="assets/sign/wooden-sign.png"
+                    alt=""
+                >
+
+                <span class="sign-alert">!</span>
+            </button>
+
+            <div
+                class="petal-layer"
+                id="petalLayer"
+                aria-hidden="true"
+            ></div>
+
+            <div
+                class="sparkle-layer"
+                id="sparkleLayer"
+                aria-hidden="true"
+            ></div>
+
+        </div>
+
+    </main>
+
+    <div
+        class="modal-overlay"
+        id="helpModal"
+        aria-hidden="true"
+    >
+
+        <div class="help-window">
+
+            <button
+                class="modal-close"
+                id="closeHelp"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+            <h1>Welcome!</h1>
+
+            <p>
+                
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
